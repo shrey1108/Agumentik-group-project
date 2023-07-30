@@ -1,0 +1,120 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5efeb;
+  font-family: 'Noto Sans', sans-serif;
+  font: 100% sans-serif;
+  color: #e1e1e1;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #f5efeb; /* Transparent black color (adjust alpha as needed) */
+  color: #fff;
+  height: 60px;
+  align-items: center;
+}
+.navbar__logo {
+  flex: 1;
+  margin-left: 20px;
+}
+.navbar__menu {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  color: black;
+}
+.navbar__menu-item {
+    margin: 0 15px;
+    
+    color: black;
+    text-decoration: none;
+  
+}
+.navbar__menu-item:active {
+    color:#b45419; /* Set color for active menu item */
+    text-decoration: none;
+  }
+  .navbar__menu-item:hover {
+    color:#b45419; /* Set color for active menu item */
+    text-decoration: none;
+  }
+.navbar__user {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+.navbar__user a {
+  color: black;
+  text-decoration: none;
+  margin-left: 15px;
+}
+.side-by-side{
+  width: 250px;
+  height: 150px;
+  border: 1px;
+  border-color: #b45419;
+  border-style: solid;
+  border-radius: 10px;
+ 
+}
+.side-by-side:hover{
+  background-color: rgb(251, 248, 248);
+  border: 0px;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px 0px #b45419;
+}
+.middle{
+  position: absolute;
+            top: 50%; /* Place the top of the content at 50% of the container height */
+            left: 50%; /* Place the left of the content at 50% of the container width */
+            transform: translate(-50%, -50%);
+}
+.buttoncss {
+    --c: #826832;
+    /* the color*/
+    color: black;
+
+    box-shadow: 0 0 0 0 inset var(--c);
+    --_g: linear-gradient(var(--c) 0 0) no-repeat;
+    background:
+        var(--_g) calc(var(--_p, 0%) - 100%) 0%,
+        var(--_g) calc(200% - var(--_p, 0%)) 0%,
+        var(--_g) calc(var(--_p, 0%) - 100%) 100%,
+        var(--_g) calc(200% - var(--_p, 0%)) 100%;
+    background-size: 50.5% calc(var(--_p, 0%)/2 + 1.5%);
+    outline-offset: .1em;
+    transition: background-size .4s, background-position 0s .4s;
+}
+
+.buttoncss:hover {
+    --_p: 100%;
+    transition: background-position .4s, background-size 0s;
+}
+
+.buttoncss:active {
+    box-shadow: 0 0 9e9q inset #0009;
+    background-color: var(--c);
+    color: #fff;
+}
+
+.buttoncss {
+    font-family: system-ui, sans-serif;
+    font-size: 3.5rem;
+    cursor: pointer;
+    padding: .1em .6em;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+}
+.log:active {
+  color:#fff; /* Set color for active menu item */
+  text-decoration: none;
+}
+.log:hover {
+  color:#fff; /* Set color for active menu item */
+  text-decoration: none;
+}
