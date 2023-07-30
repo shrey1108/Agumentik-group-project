@@ -118,3 +118,6 @@ body {
   color:#fff; /* Set color for active menu item */
   text-decoration: none;
 }
+html{
+scroll-behavior: smooth;
+}
