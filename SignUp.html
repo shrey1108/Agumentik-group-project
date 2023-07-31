@@ -15,7 +15,7 @@
                 margin-left: 20%;
                 margin-right: 25%;
                 margin-top:2%;
-                box-shadow: 1px 1px 5px 5px #4e8891;
+                box-shadow: 1px 1px 5px 5px #b45419;;
                 padding: 20px;
                 
             }
@@ -44,5 +44,22 @@
             </div>
            <a href="Loginform.html"><button type="button" class="btn btn-primary" value="Submit" onclick="setData();">Submit</button></a>
         </form>
+        <script>
+            function setData()
+            {
+                //to get the data from the field
+                var user =document.getElementById("exampleInputUser1").value;
+                var email=document.getElementById("exampleInputEmail1").value;
+                var password=document.getElementById("exampleInputPassword1").value;
+
+                localStorage.setItem("user",user);
+                localStorage.setItem("useremail",email);
+                localStorage.setItem("userpassword",password);
+
+                alert("Data is submitted successfully");
+                window.open("SignUpbackend.html","_parent");//_blank
+                window.open
+            }
+        </script>
     </body>
 </html>
